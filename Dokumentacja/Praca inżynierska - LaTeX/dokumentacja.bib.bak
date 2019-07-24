@@ -6,15 +6,9 @@ author = {Moś, M.},
 note = {\url{http://procesy.ue.wroc.pl/uploads/Marcin/BPMN.pdf} [dostęp dnia 20 czerwca 2015]}
 }
 
-@Booklet{arduinoFramework,
-  title = {Arduino framework},
-  note  = {\url{https://www.gov.pl/web/5g}},
-  url   = {https://www.gov.pl/web/5g},
-}
-
 @Booklet{5ggov,
   title = {Strona polskiego Ministerstwa Cyfryzacji},
-  note  = {\url{https://www.arduino.cc/}},
+  note  = {\url{https://www.gov.pl/web/5g}},
   url   = {https://www.gov.pl/web/5g},
 }
 

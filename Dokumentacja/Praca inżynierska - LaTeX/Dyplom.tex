@@ -469,9 +469,9 @@ SPECJALNOŚĆ: & \@specjalnosc\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%  Metadane dokumentu 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{Szablon pracy dyplomowej inżynierskiej/magisterskiej, wersja 0.2}
-\titleShort{Szablon pracy dyplomowej ...}
-\titleEN{Engineering/master thesis template, version 0.2}
+\title{Projekt robota usługowego do zastosowań domowych}
+\titleShort{Projekt robota usługowego do zastosowań domowych}
+\titleEN{Project of a service robot for home purposes}
 \author{Albert Lis}
 \uczelnia{POLITECHNIKA WROCŁAWSKA}
 \wydzial{WYDZIAŁ ELEKTRONIKI}
@@ -498,7 +498,7 @@ SPECJALNOŚĆ: & \@specjalnosc\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                  Początek dokumentu 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\includeonly{skroty,rozdzial01} % jeśli chcemy kompilować tylko fragmenty, to można tu je wpisać
+\includeonly{rozdzial01} % jeśli chcemy kompilować tylko fragmenty, to można tu je wpisać
 
 \begin{document}
 % Tutaj można przełączyć odstęp między liniami
@@ -511,27 +511,16 @@ SPECJALNOŚĆ: & \@specjalnosc\\
 \maketitle
 
 \newpage
-\thispagestyle{empty}
-\mbox{}\vfill
-\noindent\begin{tabular}{@{}ll} Opracował: & Tomasz Kubik <tomasz.kubik@pwr.edu.pl>\\
- Data: & maj 2016 
- \end{tabular}\\[15mm]
-\noindent\includegraphics[width=3cm]{by-nc-sa}\newline
-{\normalfont 
-Szablon jest udostępniany na licencji Creative Commons: \emph{Uznanie autorstwa -- Użycie niekomercyjne -- Na tych samych warunkach, 3.0 Polska}, Wrocław 2016. \\[2pt]
-Oznacza to, że wszystkie zawarte  nim treści można kopiować i  wykorzystywać do celów niekomercyjnych, a także tworzyć na ich podstawie utwory zależne pod warunkiem podania autora i~nazwy licencjodawcy oraz udzielania na utwory zależne takiej samej licencji. Tekst licencji jest dostępny pod adresem: \url{http://creativecommons.org/licenses/by-nc-sa/3.0/pl/}.}
-\newpage
-
 
 \chapterstyle{noNumbered}
 \pagestyle{outer}
 \mbox{}\pdfbookmark[0]{Spis treści}{spisTresci.1}
 \tableofcontents* 
 
-\newpage
-\mbox{}\pdfbookmark[0]{Spis rysunków}{spisRysunkow.1}
-%\addcontentsline{toc}{chapter}{Spis rysunków}
-\listoffigures*
+%\newpage
+%\mbox{}\pdfbookmark[0]{Spis rysunków}{spisRysunkow.1}
+%\addcontentsline{toc}{chapter}{Spis rysunków} %to było zakomentowane
+%\listoffigures*
 \begin{flushleft}
 
 \end{flushleft}
@@ -542,10 +531,10 @@ Oznacza to, że wszystkie zawarte  nim treści można kopiować i  wykorzystywa�
 %}
 
 
-\newpage
-\mbox{}\pdfbookmark[0]{Spis tabel}{spisTabel.1}
-%\addcontentsline{toc}{chapter}{Spis tabel}
-\listoftables*
+%\newpage
+%\mbox{}\pdfbookmark[0]{Spis tabel}{spisTabel.1}
+%\addcontentsline{toc}{chapter}{Spis tabel} %to było zakomentowane
+%\listoftables*
 
 \include{skroty} %skróty można sobie pominąć
 \chapterstyle{default}
