@@ -1,0 +1,13 @@
+E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/CMakeFiles/stmtest.dir
+E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/CMakeFiles/PLATFORMIO_UPLOADFS.dir
+E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/CMakeFiles/PLATFORMIO_BUILD.dir
+E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/CMakeFiles/PLATFORMIO_CLEAN.dir
+E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/CMakeFiles/PLATFORMIO_BUILD_VERBOSE.dir
+E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/CMakeFiles/PLATFORMIO_UPLOAD.dir
+E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/CMakeFiles/PLATFORMIO_MONITOR.dir
+E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/CMakeFiles/PLATFORMIO_TEST.dir
+E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/CMakeFiles/PLATFORMIO_PROGRAM.dir
+E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/CMakeFiles/PLATFORMIO_UPDATE_ALL.dir
+E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/CMakeFiles/PLATFORMIO_REBUILD_PROJECT_INDEX.dir
+E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/CMakeFiles/rebuild_cache.dir

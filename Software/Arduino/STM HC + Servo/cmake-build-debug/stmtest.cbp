@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="stmtest"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stmtest">
+				<Option output="E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/stmtest.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/Dokumenty/PlatformIO/Projects/stmtest/include"/>
+					<Add directory="E:/Dokumenty/PlatformIO/Projects/stmtest/src"/>
+					<Add directory="E:/Dokumenty/PlatformIO/Projects/stmtest/lib/Servo/src"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/cores/maple"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/system/libmaple"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/system/libmaple/include"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/system/libmaple/stm32f1/include"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/system/libmaple/usb/stm32f1"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/system/libmaple/usb/usb_lib"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/variants/generic_stm32f103c"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/lib/Arduino Low Power_ID1577/src"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/lib/BH1750FVI_ID5536/src"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/lib/BH1750_ID439"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/lib/RTClib_ID83"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/lib/Servo_ID883/src"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/lib/StandardCplusplus_ID572"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/lib/Thread_ID440"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/A_STM32_Examples"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/Adafruit_GFX_AS"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/Adafruit_ILI9341"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/Adafruit_ILI9341_STM"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/Adafruit_SSD1306"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/EEPROM"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/Ethernet_STM/src"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/FreeRTOS701"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/FreeRTOS701/utility"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/FreeRTOS821"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/FreeRTOS821/utility"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/FreeRTOS900"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/Lcd7920_STM"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/LiquidCrystal"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/MapleCoOS"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/MapleCoOS/utility"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/MapleCoOS116"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/MapleCoOS116/utility"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/OLED_I2C"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/OneWireSTM/src"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/RTClock/src"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/SDIO"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/SPI/src"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/STM32ADC/src"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/Serasidis_EtherCard_STM/src"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/Serasidis_VS1003B_STM/src"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/Serasidis_XPT2046_touch/src"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/Servo/src"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/Touch-Screen-Library_STM"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/USBComposite"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/WS2812B/src"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/Wire"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/Wire/utility"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/WireSlave/src"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/stm_fft"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/c++/7.2.1"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/c++/7.2.1/arm-none-eabi"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/toolchain-gccarmnoneeabi/lib/gcc/arm-none-eabi/7.2.1/include"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/toolchain-gccarmnoneeabi/lib/gcc/arm-none-eabi/7.2.1/include-fixed"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/tool-unity"/>
+					<Add directory="e:\programy\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++"/>
+					<Add directory="e:\programy\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32"/>
+					<Add directory="e:\programy\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward"/>
+					<Add directory="e:\programy\mingw\bin\../lib/gcc/mingw32/8.2.0/include"/>
+					<Add directory="e:\programy\mingw\bin\../lib/gcc/mingw32/8.2.0/../../../../include"/>
+					<Add directory="e:\programy\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 stmtest"/>
+					<CompileFile command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stmtest/fast">
+				<Option output="E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/stmtest.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/Dokumenty/PlatformIO/Projects/stmtest/include"/>
+					<Add directory="E:/Dokumenty/PlatformIO/Projects/stmtest/src"/>
+					<Add directory="E:/Dokumenty/PlatformIO/Projects/stmtest/lib/Servo/src"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/cores/maple"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/system/libmaple"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/system/libmaple/include"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/system/libmaple/stm32f1/include"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/system/libmaple/usb/stm32f1"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/system/libmaple/usb/usb_lib"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/variants/generic_stm32f103c"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/lib/Arduino Low Power_ID1577/src"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/lib/BH1750FVI_ID5536/src"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/lib/BH1750_ID439"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/lib/RTClib_ID83"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/lib/Servo_ID883/src"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/lib/StandardCplusplus_ID572"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/lib/Thread_ID440"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/A_STM32_Examples"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/Adafruit_GFX_AS"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/Adafruit_ILI9341"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/Adafruit_ILI9341_STM"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/Adafruit_SSD1306"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/EEPROM"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/Ethernet_STM/src"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/FreeRTOS701"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/FreeRTOS701/utility"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/FreeRTOS821"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/FreeRTOS821/utility"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/FreeRTOS900"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/Lcd7920_STM"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/LiquidCrystal"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/MapleCoOS"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/MapleCoOS/utility"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/MapleCoOS116"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/MapleCoOS116/utility"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/OLED_I2C"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/OneWireSTM/src"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/RTClock/src"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/SDIO"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/SPI/src"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/STM32ADC/src"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/Serasidis_EtherCard_STM/src"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/Serasidis_VS1003B_STM/src"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/Serasidis_XPT2046_touch/src"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/Servo/src"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/Touch-Screen-Library_STM"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/USBComposite"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/WS2812B/src"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/Wire"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/Wire/utility"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/WireSlave/src"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/framework-arduinoststm32-maple/STM32F1/libraries/stm_fft"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/c++/7.2.1"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/c++/7.2.1/arm-none-eabi"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/toolchain-gccarmnoneeabi/lib/gcc/arm-none-eabi/7.2.1/include"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/toolchain-gccarmnoneeabi/lib/gcc/arm-none-eabi/7.2.1/include-fixed"/>
+					<Add directory="C:/Users/Papa Smerf/.platformio/packages/tool-unity"/>
+					<Add directory="e:\programy\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++"/>
+					<Add directory="e:\programy\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32"/>
+					<Add directory="e:\programy\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward"/>
+					<Add directory="e:\programy\mingw\bin\../lib/gcc/mingw32/8.2.0/include"/>
+					<Add directory="e:\programy\mingw\bin\../lib/gcc/mingw32/8.2.0/../../../../include"/>
+					<Add directory="e:\programy\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 stmtest/fast"/>
+					<CompileFile command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_UPLOADFS">
+				<Option working_dir="E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_UPLOADFS"/>
+					<CompileFile command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_BUILD">
+				<Option working_dir="E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_BUILD"/>
+					<CompileFile command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_CLEAN">
+				<Option working_dir="E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_CLEAN"/>
+					<CompileFile command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_BUILD_VERBOSE">
+				<Option working_dir="E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_BUILD_VERBOSE"/>
+					<CompileFile command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_UPLOAD">
+				<Option working_dir="E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_UPLOAD"/>
+					<CompileFile command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_MONITOR">
+				<Option working_dir="E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_MONITOR"/>
+					<CompileFile command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_TEST">
+				<Option working_dir="E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_TEST"/>
+					<CompileFile command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_PROGRAM">
+				<Option working_dir="E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_PROGRAM"/>
+					<CompileFile command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_UPDATE_ALL">
+				<Option working_dir="E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_UPDATE_ALL"/>
+					<CompileFile command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_REBUILD_PROJECT_INDEX">
+				<Option working_dir="E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_REBUILD_PROJECT_INDEX"/>
+					<CompileFile command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Programy/MinGW/bin/mingw32-make.exe -f &quot;E:/Dokumenty/PlatformIO/Projects/stmtest/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="E:/Dokumenty/PlatformIO/Projects/stmtest/lib/Servo/examples/Knob/Knob.ino">
+			<Option target="stmtest"/>
+		</Unit>
+		<Unit filename="E:/Dokumenty/PlatformIO/Projects/stmtest/lib/Servo/examples/Sweep/Sweep.ino">
+			<Option target="stmtest"/>
+		</Unit>
+		<Unit filename="E:/Dokumenty/PlatformIO/Projects/stmtest/lib/Servo/keywords.txt">
+			<Option target="stmtest"/>
+		</Unit>
+		<Unit filename="E:/Dokumenty/PlatformIO/Projects/stmtest/lib/Servo/library.properties">
+			<Option target="stmtest"/>
+		</Unit>
+		<Unit filename="E:/Dokumenty/PlatformIO/Projects/stmtest/lib/Servo/src/Servo.cpp">
+			<Option target="stmtest"/>
+		</Unit>
+		<Unit filename="E:/Dokumenty/PlatformIO/Projects/stmtest/lib/Servo/src/Servo.h">
+			<Option target="stmtest"/>
+		</Unit>
+		<Unit filename="E:/Dokumenty/PlatformIO/Projects/stmtest/src/.idea/misc.xml">
+			<Option target="stmtest"/>
+		</Unit>
+		<Unit filename="E:/Dokumenty/PlatformIO/Projects/stmtest/src/.idea/modules.xml">
+			<Option target="stmtest"/>
+		</Unit>
+		<Unit filename="E:/Dokumenty/PlatformIO/Projects/stmtest/src/.idea/src.iml">
+			<Option target="stmtest"/>
+		</Unit>
+		<Unit filename="E:/Dokumenty/PlatformIO/Projects/stmtest/src/.idea/workspace.xml">
+			<Option target="stmtest"/>
+		</Unit>
+		<Unit filename="E:/Dokumenty/PlatformIO/Projects/stmtest/src/main.cpp">
+			<Option target="stmtest"/>
+		</Unit>
+		<Unit filename="E:/Dokumenty/PlatformIO/Projects/stmtest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="E:/Dokumenty/PlatformIO/Projects/stmtest/CMakeListsPrivate.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
