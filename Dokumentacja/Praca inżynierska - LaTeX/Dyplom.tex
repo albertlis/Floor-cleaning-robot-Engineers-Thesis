@@ -22,6 +22,9 @@
 %\usepackage{soul} % pakiet z komendami do podkreślania tekstu
 
 \usepackage{ebgaramond} % pakiet z czcionkami garamond, potrzebny tylko do strony tytułowej, musi wystąpić przed pakietem tgtermes
+%\usepackage[demo]{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
 
 %% Aby uzyskać polskie literki w pdfie (a nie zlepki) korzystamy z pakietu czcionek tgterms. 
 %% W pakiecie tym są zdefiniowane klony czcionek Times o kształtach: normalny, pogrubiony, italic, italic pogrubiony.
@@ -498,7 +501,7 @@ SPECJALNOŚĆ: & \@specjalnosc\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                  Początek dokumentu 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\includeonly{rozdzial01} % jeśli chcemy kompilować tylko fragmenty, to można tu je wpisać
+%\includeonly{rozdzial01} % jeśli chcemy kompilować tylko fragmenty, to można tu je wpisać
 
 \begin{document}
 % Tutaj można przełączyć odstęp między liniami
@@ -544,6 +547,7 @@ SPECJALNOŚĆ: & \@specjalnosc\\
 \include{rozdzial04}
 \include{rozdzial05}
 \include{rozdzial06}
+\include{Konstrukcja}
 
 %\bibliographystyle{plalpha}
 \bibliographystyle{plabbrv}
