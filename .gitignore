@@ -11,3 +11,5 @@
 *.gz
 *.tcp
 *.tps
+*.SchDoc.Zip
+*.OutJob
