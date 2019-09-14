@@ -19,8 +19,19 @@
 		\item (1,1) - robot nazywany także samochodem kinematycznym ponieważ zachowuje się podczas sterowania jak zwykły samochód. Jego plusem jest niska wrażliwość na nierówności powierzchni, a jego minusem duży promień skrętu.
 	\end{itemize}
 	
-	Jedynym holonomicznym z wyżej wymienionych klas robotów mobilnych kołowym, jest klasa (3,0). \newline
+	Jedynym holonomicznym z wyżej wymienionych klas robotów mobilnych kołowym, jest klasa (3,0). \newline \newline \newline
 	\textcolor{red}{Holonomiczność} - to w uproszczeniu brak ograniczeń na przeprowadzenie ruchu.
+	\newline \newline \newline
+	Do sterowania kierunkiem obrotów silnika szczotkowego DC wykorzystuje się układ zwany mostkiem H. Jest on przedstawiony schematycznie na rysunku \ref{fig:mostekHschemat}. 
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.4\textwidth]{rys01/mostekH.jpeg} 
+		\caption{Schemat mostka H}
+		\label{fig:mostekHschemat}
+	\end{figure}
+
+	Styki oznaczone literą S i silnik oznaczony literą M przypominają kształt dużej litery H. Jego działanie polega na zwieraniu odpowiednio styków S1 oraz S4 aby uzyskać kierunek obrotów w jedną stronę. Chcąc uzyskać obroty w drugą stronę należy zewrzeć styki S2 i S3. Należy mieć na uwadze odpowiednie sterowanie ponieważ załączenie w jednym czasie styków S1 i S3 lub S2 i S4 spowoduje zwarcie.
 %%%
 %%%Uwaga: tytuł powinien zmieścić się w okienku kolorowej okładki (którą
 %%%powinna dostarczyć uczelniana administracja). Proszę posterować
