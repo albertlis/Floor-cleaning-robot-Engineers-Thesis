@@ -6,9 +6,9 @@ author = {Moś, M.},
 note = {\url{http://procesy.ue.wroc.pl/uploads/Marcin/BPMN.pdf} [dostęp dnia 20 czerwca 2015]}
 }
 
-@Booklet{raspbian,
-  title = {System operacyjny Raspian},
-  note  = {\url{https://www.raspberrypi.org/downloads/raspbian/}},
+@Booklet{rozladowywanieLiIon2,
+  title = {Rozładowywanie Li-Ion 2},
+  note  = {\url{https://batteryuniversity.com/learn/article/discharge_characteristics_li}},
   url   = {https://www.gov.pl/web/5g},
 }
 
@@ -28,6 +28,38 @@ note = {\url{http://procesy.ue.wroc.pl/uploads/Marcin/BPMN.pdf} [dostęp dnia 20
   title = {Arduino framework},
   note  = {\url{https://www.arduino.cc/}},
   url   = {https://www.gov.pl/web/5g},
+}
+
+@Booklet{raspbian,
+  title = {System operacyjny Raspian},
+  note  = {\url{https://www.raspberrypi.org/downloads/raspbian/}},
+  url   = {https://www.raspberrypi.org/downloads/raspbian/},
+}
+
+@Booklet{ladowanieLiIon2,
+  title = {Ładowanie Li-Ion2},
+  note  = {\url{https://batteryuniversity.com/index.php/learn/article/how_to_prolong_lithium_based_batterieshttps://batteryuniversity.com/index.php/learn/article/how_to_prolong_lithium_based_batteries}},
+  url   = {https://batteryuniversity.com/index.php/learn/article/how_to_prolong_lithium_based_batterieshttps://batteryuniversity.com/index.php/learn/article/how_to_prolong_lithium_based_batteries},
+}
+
+@Booklet{rozladowywanieLiIon1,
+  title = {Rozładowywanie Li-Ion 1},
+  note  = {\url{https://batteryuniversity.com/learn/article/discharge_methods}},
+  url   = {https://www.gov.pl/web/5g},
+}
+
+@Booklet{ladowanieLiIon,
+  title = {Ładowanie Li-Ion},
+  note  = {\url{https://batteryuniversity.com/index.php/learn/article/how_to_prolong_lithium_based_batteries}},
+  url   = {https://batteryuniversity.com/index.php/learn/article/how_to_prolong_lithium_based_batteries},
+}
+
+@Book{Mazur,
+  title     = {Sterowanie oparte na modelu dla nieholonomicznych manipulatorów mobilnych},
+  publisher = {a},
+  year      = {2009},
+  author    = {Alicja Mazur},
+  editor    = {a},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

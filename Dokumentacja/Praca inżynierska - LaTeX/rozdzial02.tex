@@ -141,7 +141,7 @@
 	
 	\section{Zasilanie}
 	
-		Jako zasilanie wykorzystanie 2 akumulatory Li-Ion 18650 połączone szeregowo. Napięcie nominalne takiego pakietu wynosi \SI{7.4}{\volt}. Zdecydowano się na takie połączenie w celu zmniejszenia prądów płynących w przewodach zasilających. Przyczyni się to do mniejszych strat na rezystancjach połączeń oraz zwiększy żywotność przełącznika bistabilnego On/Off. Aby dopasować napięcie do zasilania mikrokontrolera oraz peryferiów wykorzystano 2 przetwornice obniżające napięcie zbudowane w oparciu o układ MP2307. Jedna została wyregulowana na napięcie \SI{3.3}{\volt}, natomiast druga na \SI{5}{\volt}. Parametry techniczne przetwornic zostały przedstawione w tabeli \ref{tab:PrzetwornicaStepDown}.
+		Jako zasilanie wykorzystanie 2 akumulatory Li-Ion 18650 połączone szeregowo. Napięcie nominalne takiego pakietu wynosi \SI{7.4}{\volt}. Przewagą takiego rozwiązania względem połączenia równoległego jest zmniejszenie prądów płynących w przewodach zasilających. Przyczyni się to do mniejszych strat na rezystancjach połączeń oraz zwiększy żywotność przełącznika bistabilnego On/Off. Aby dopasować napięcie do zasilania mikrokontrolera oraz peryferiów wykorzystano 2 przetwornice obniżające napięcie zbudowane w oparciu o układ MP2307. Jedna została wyregulowana na napięcie \SI{3.3}{\volt}, natomiast druga na \SI{5}{\volt}. Parametry techniczne przetwornic zostały przedstawione w tabeli \ref{tab:PrzetwornicaStepDown}.
 		
 		\begin{table}[H]
 			\centering
@@ -157,6 +157,26 @@
 			\end{tabular}
 			\caption{Parametry znamionowe przetwornicy obniżającej napięcie}
 			\label{tab:PrzetwornicaStepDown}
+		\end{table}
+	
+		Baterie Li-Ion są bardzo wrażliwe zarówno na przeładowywanie \cite{ladowanieLiIon} jak i nadmierne rozładowanie \cite{rozladowywanieLiIon1, rozladowywanieLiIon2}. Najniższe napięcie rozładowania jakiego nie zaleca się przekraczać wynosi \SI{2.4}{\volt}, natomiast typową wartością eksploatacji jest \SI{3}{\volt} \cite{rozladowywanieLiIon2}. Z drugiej strony nadmierne przeładowywanie również drastycznie wpływa na żywotność akumulatorów. Nominalnym napięciem ładowania jest \SI{4.2}{\volt}. Jednak można ładować ogniwa do niższego napięcia zmniejsza się wtedy ich pojemność ale wzrasta żywotność. Wpływ końcowego napięcia ładowania na ogniwa przedstawiono w tabeli w oparciu o informacje ze źródła \cite{ladowanieLiIon}
+		
+		\begin{table}[H]
+			\centering
+			\begin{tabular}{|l|c|c|} \hline
+				Napięcie końcowe \unit{V} & Ilość cykli rozładowywania & Pojemność ogniwa \\
+				\hline
+				\hline \SI{4.30}{\volt} & 150 -- 200 & 110 -- \SI{115}{\percent}\\
+				\hline \SI{4.25}{\volt}	& 200 -- 350 & 105 -- \SI{110}{\percent}\\
+				\hline \SI{4.20}{\volt}	& \textcolor{red}{300 -- 500} & \SI{100}{\percent}\\
+				\hline \SI{4.15}{\volt}	& 400 -- 700 & 90 -- \SI{95}{\percent} \\
+				\hline \SI{4.10}{\volt}	& 600 -- 1000 & 85 -- \SI{90}{\percent}\\
+				\hline \SI{4.05}{\volt} & 850 -- 1500 & 80 -- \SI{85}{\percent}\\
+				\hline \SI{4.00}{\volt} & 1200 -- 2000 & 70 -- \SI{75}{\percent}\\
+				\hline
+			\end{tabular}
+			\caption{Wpływ napięcia końcowego na żywotność akumulatorów Li-Ion}
+			\label{tab:napięcieKońcoweLiIon}
 		\end{table}
 	
 %%%
