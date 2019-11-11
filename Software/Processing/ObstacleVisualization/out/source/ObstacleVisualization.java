@@ -17,7 +17,7 @@ import java.io.InputStream;
 import java.io.OutputStream; 
 import java.io.IOException; 
 
-public class Processing extends PApplet {
+public class ObstacleVisualization extends PApplet {
 
 
 
@@ -69,23 +69,9 @@ public void draw() {
     if(measurement.angle != -1 && measurement.distance != -1 && measurement.distance != 0)
     {
         background(102);
-        // temp.x = map(cos(radians(measurement.angle)), -1.0, 1.0, -width/2, width/2) + width/2;
-        // temp.y = (sin(radians(measurement.angle)) * (float)measurement.distance) + height/2 ;
-        // println(temp.y);
-        // println("Angle: " + measurement.angle);
-        points.set(measurement.angle, temp);
         println("Angle: " + measurement.angle + " Distance: " + measurement.distance);
-        // lineAngle((int)downCenter.x, (int)downCenter.y, radians(measurement.angle), measurement.distance);
-        /*
-        for(int i = 0; i < 180; ++i)
-        {
-            lineAngle((int)downCenter.x, (int)downCenter.y, measurement.angle, measurement.distance*100)
-        }*/
-        // line(downCenter.x, downCenter.y, temp.x, temp.y);
-        for( PVector point : points)
-        {
-            lineAngle((int)downCenter.x, (int)downCenter.y, radians(measurement.angle), measurement.distance);
-        }
+        lineAngle((int)downCenter.x, (int)downCenter.y, radians(measurement.angle), measurement.distance);
+
     }
 }
 
@@ -149,7 +135,7 @@ public void lineAngle(int x, int y, float angle, float length)
 }
   public void settings() {  size(600, 400); }
   static public void main(String[] passedArgs) {
-    String[] appletArgs = new String[] { "Processing" };
+    String[] appletArgs = new String[] { "ObstacleVisualization" };
     if (passedArgs != null) {
       PApplet.main(concat(appletArgs, passedArgs));
     } else {

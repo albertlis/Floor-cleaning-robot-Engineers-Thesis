@@ -16,7 +16,7 @@ plot(x,y);
 xlabel('x');
 ylabel('y');
 legend('Trajektoria genarator', 'Trajektoria rzeczywista');
-axis([-1 15 -1 12])
+axis([-1 11 -1 12])
 print -depsc trajektoriaRownoleglek1=02k2=10s1
 
 k1 = 1;
@@ -43,5 +43,5 @@ plot(t, fi2, '--');
 xlabel('t [s]');
 ylabel('obr\s');
 legend('Lewe', 'Prawe');
-axis([0 130 -8 8])
+axis([0 125 -8 8])
 print -depsc predkosciKolRownoleglek1=1k2=10

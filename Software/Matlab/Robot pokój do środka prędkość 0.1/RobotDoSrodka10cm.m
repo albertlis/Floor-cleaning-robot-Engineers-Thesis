@@ -6,7 +6,7 @@ tsym = 80;
 R = 0.034;
 l = 0.095;
 
-sim('RobotDoSrodka10cmLimitSim');
+sim('RobotDoSrodka10cmSim');
 figure;
 plot(xd,yd,'--');
 hold on;

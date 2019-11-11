@@ -27,5 +27,5 @@ plot(t, fi2, '--');
 xlabel('t [s]');
 ylabel('obr\s');
 legend('Lewe', 'Prawe');
-%axis([0 130 -8 8])
+axis([0 75 -1.5 1.5])
 print -depsc predkosciKolKwadratk1=1k2=10d02s01Limit

@@ -13,11 +13,11 @@ plot(x,y);
 xlabel('x');
 ylabel('y');
 legend({'Generator', 'k1 = 0.1', 'k1 = 0.5', 'k1 = 1', 'k1 = 5', 'k1 = 10'},'FontSize', 7, 'NumColumns', 3);
-axis([-1 13 -1 12])
+axis([-1 11 -1 12])
 print -depsc trajektoriaRownoleglaPorownaniek1
 
 k1 = 0.1;
-k2 = [50 10 5 1];
+k2 = [10 5 1 0.5 0.1];
 
 sim('RobotRownoleglePorownanieParametrowSim');
 figure;
@@ -27,7 +27,7 @@ grid on;
 plot(x,y);
 xlabel('x');
 ylabel('y');
-legend({'Generator', 'k2 = 50', 'k2 = 10', 'k2 = 5', 'k2 = 1'},'FontSize', 7, 'NumColumns', 3);
-axis([-1 20 -1 12])
+legend({'Generator', 'k2 = 10', 'k2 = 5', 'k2 = 1', 'k2 = 0.5', 'k2 = 0.1'},'FontSize', 7, 'NumColumns', 3);
+axis([-1 11 -1 12])
 print -depsc trajektoriaRownoleglaPorownaniek2
 

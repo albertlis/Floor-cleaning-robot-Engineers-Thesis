@@ -6,7 +6,7 @@ wd = 0.1;
 R = 10;
 tsym = 200;
 
-sim('RobotDoSrodka10cmLimitZaokragloneSim');
+sim('RobotDoSrodkaPorownanieParametrowSim');
 figure;
 plot(xd,yd,'r--');
 hold on;
@@ -30,5 +30,5 @@ plot(x,y);
 xlabel('x');
 ylabel('y');
 legend({'Generator', 'k2 = 1', 'k2 = 5', 'k2 = 10', 'k2 = 50'},'FontSize', 7, 'NumColumns', 3);
-axis([-1 14 -1 12])
+axis([-1 11 -1 12])
 print -depsc trajektoriaKwadratPorownaniek2

@@ -20,7 +20,7 @@ xlabel('x');
 ylabel('y');
 legend('Trajektoria genarator', 'Trajektoria rzeczywista');
 title('Trajektoria');
-axis([-0.2 1.1 -0.1 1.1])
+axis([-0.1 1.1 -0.1 1.1])
 print -depsc trajektoriaRownoleglek1=1k2=10s=01d02
 
 figure;
@@ -32,7 +32,7 @@ xlabel('t [s]');
 ylabel('obr\s');
 legend('Lewe', 'Prawe');
 title('Prêdkoœci kó³');
-%axis([0 75 -2 2])
+axis([0 75 -1.5 1.5])
 print -depsc predkoscKolRownoleglek1=1k2=10s=01d02
 
 figure;
@@ -40,3 +40,4 @@ plot(t,wr);
 grid on;
 hold on;
 title('Prêdkoœæ k¹towa');
+axis([0 75 -20 20])

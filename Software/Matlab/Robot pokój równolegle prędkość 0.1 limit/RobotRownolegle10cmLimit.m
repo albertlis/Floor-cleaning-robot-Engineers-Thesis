@@ -18,7 +18,7 @@ xlabel('x');
 ylabel('y');
 legend('Trajektoria genarator', 'Trajektoria rzeczywista');
 %title('Trajektoria');
-axis([-0.2 1.1 -0.1 1.1])
+axis([-0.1 1.1 -0.1 1.1])
 print -depsc trajektoriaRownoleglek1=1k2=10s=01d02Limit
 
 figure;
@@ -39,4 +39,5 @@ grid on;
 hold on;
 plot(t,wr1, '--');
 legend('wr', 'wr1');
+axis([0 75 -20 20])
 title('Prêdkoœæ k¹towa');
