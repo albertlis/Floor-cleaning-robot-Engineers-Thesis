@@ -27,7 +27,9 @@ public void setup() {
     
     try {
         String portName = Serial.list()[0];
-        myPort = new Serial(this, portName, 115200);
+        println(Serial.list()[0]);
+        myPort = new Serial(this, portName, 7200000);
+        // myPort = new Serial(this, portName, 115200); 
     }
     catch(ArrayIndexOutOfBoundsException e) { 
         println("Can't open serial port");
@@ -47,7 +49,7 @@ public void draw() {
 
     String buffer = new String();
     if(myPort.available() > 0) {
-        buffer = myPort.readString();
+        buffer = myPort.readStringUntil('\n');
         buffer = buffer.trim();
     }
 
@@ -55,7 +57,8 @@ public void draw() {
         String[] splittedBuffer = buffer.split(" ");
         buffer = "";
         // println(splittedBuffer);
-        if(splittedBuffer.length == 24 ) {
+        // println(splittedBuffer.length);
+        if(splittedBuffer.length == 30 ) {
             // println(splittedBuffer);
             try {
                 stroke(255);
@@ -77,16 +80,29 @@ public void draw() {
                 double wGiven = Double.parseDouble(splittedBuffer[19]);
                 double vRobot = Double.parseDouble(splittedBuffer[21]);
                 double wRobot = Double.parseDouble(splittedBuffer[23]);
-                file.println(ph1Speed + " " + ph2Speed + " " + fid + " " + fi + " " + vGiven + " " + wGiven + " "+ vRobot + " " + wRobot);
+                int time = Integer.parseInt(splittedBuffer[25]);
+                double ph1Speed1 = Double.parseDouble(splittedBuffer[27]);
+                double ph2Speed1 = Double.parseDouble(splittedBuffer[29]);
+                if(ph1Speed1 > 2.0f)
+                    ph1Speed1 = 0;
+                if(ph2Speed1 > 2.0f)
+                    ph2Speed1 = 0;
+                file.println(ph1Speed + " " + ph2Speed + " " + fid + " " + fi 
+                            + " " + vGiven + " " + wGiven + " "+ vRobot + " " 
+                            + wRobot + " " + time/1000.0f + " " 
+                            + x1Value + " " + y1Value + " " + x2Value + " " + y2Value
+                            + " " + ph1Speed1 + " " + ph2Speed1);
                 file.flush();
             }
-            catch (NumberFormatException e) {};
+            catch (NumberFormatException e) { 
+                println("Comunnication error");
+            };
         }
     }
 }
 
 
-  public void settings() {  size(1000, 1000);  noSmooth(); }
+  public void settings() {  size(1000, 820);  noSmooth(); }
   static public void main(String[] passedArgs) {
     String[] appletArgs = new String[] { "TrajectoryVisualization" };
     if (passedArgs != null) {

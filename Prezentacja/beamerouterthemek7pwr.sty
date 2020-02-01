@@ -1,0 +1,181 @@
+\ProvidesPackageRCS $Header: /root/latex-beamer/latex-beamer/themes/outer/beamerouterthemek7pwr.sty,v 1.00 2014/04/22 22:21:16 tantau Exp $
+
+% Copyright 2003 by Till Tantau <tantau@users.sourceforge.net>
+%
+% This program can be redistributed and/or modified under the terms
+% of the GNU Public License, version 2.
+%
+% Modified by Robert Muszyński <Robert.Muszynski@pwr.edu.pl>
+
+\newdimen\beamer@sidebarwidth
+\newdimen\beamer@headheight
+% RM to adjust height of the box with slide title for plain slides
+\newdimen\headboxheight
+\newdimen\headboxskip
+
+\usebeamerfont{frametitle}
+\beamer@sidebarwidth=2.5\baselineskip
+\beamer@headheight=2.5\baselineskip
+\reset@font
+
+\def\beamer@lefttext{left}
+
+\DeclareOptionBeamer{hideothersubsections}[]{\beamer@nav@subsectionstyle{show/show/hide}}
+\DeclareOptionBeamer{hideallsubsections}[]{\beamer@nav@subsectionstyle{hide}}
+
+\DeclareOptionBeamer{width}{\beamer@sidebarwidth=#1}
+\DeclareOptionBeamer{height}{\beamer@headheight=#1}
+\DeclareOptionBeamer{left}{\def\beamer@sidebarside{left}}
+\DeclareOptionBeamer{right}{\def\beamer@sidebarside{right}}
+\ExecuteOptionsBeamer{left}
+\ProcessOptionsBeamer
+
+
+\mode<presentation>
+
+\ifdim\beamer@headheight>0pt
+% if head height is 0pt, use default frame title
+
+  \setbeamercolor*{frametitle}{parent=sidebar}
+
+  \defbeamertemplate*{frametitle}{pwr theme}
+  {%
+    \nointerlineskip%
+  \@tempdima=\textwidth%
+  \advance\@tempdima by\beamer@leftmargin%
+  \advance\@tempdima by\beamer@rightmargin%
+
+% tu bylo ht=18mm oraz \vbox to 18mm  14 i~10 - reguluje szerokosc paska
+% tytulowego  RM
+% RM smaller height for plain slide head
+  \ifbeamer@plainframe%
+    \headboxheight=9mm
+    \headboxskip=4mm
+  \else% regular height
+    \headboxheight=14mm
+    \headboxskip=10mm
+  \fi%
+  \begin{beamercolorbox}[sep=0.3cm,wd=\the\@tempdima,ht=\the\headboxheight]{frametitle}
+    \vbox to \the\headboxskip{%
+    \vfil%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                           %
+%   Dodanie nazwy katedry do nagłówków stron (bez stron w~formacie plain)   %
+%                                                                           %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \ifbeamer@plainframe% Slajd plain bez nazwy katedry
+    {\usebeamerfont{frametitle}{\insertframetitle\par}}%
+  \else%
+    %% Nazwa katedry jako zwykły tekst
+    %{\usebeamerfont{frametitle}\raisebox{1mm}{\tiny\mbox{}\hspace{-4.6mm}\nazwaksiedem}\\
+    %% Nazwa katedry jako plik z~krzywymi napis zrobiony czcionką politechniczną
+    {\raisebox{2mm}{\tiny\mbox{}\hspace{-4.5mm}{\pgfuseimage{Nazwakatedrymala}}}\\[-2mm]
+    \insertframetitle\par}%
+  \fi%
+    {%
+      \ifx\insertframesubtitle\@empty%
+      \else%
+      {\usebeamerfont{framesubtitle}\usebeamercolor[fg]{framesubtitle}\insertframesubtitle}%
+      \fi
+    }%
+    \vbox{}%
+    \vskip-1em%
+    \vfil%
+    }%
+  \end{beamercolorbox}%
+  }
+
+  \defbeamertemplate*{headline}{pwr theme}
+  {%
+    \begin{beamercolorbox}[wd=\paperwidth]{headline}
+      \ifx\beamer@sidebarside\beamer@lefttext%
+      \else%
+        \hfill%
+      \fi%
+      \ifdim\beamer@sidebarwidth>0pt%
+        \usebeamercolor[bg]{logo}%
+        \vrule width\beamer@sidebarwidth height 7mm%
+        \hskip-\beamer@sidebarwidth%
+        \hbox to \beamer@sidebarwidth{\vbox to
+          7mm {\hbox{\color{fg}\pgfuseimage{Logomale}}\vss}\hss}%
+      \else%
+        \vrule width0pt height \beamer@headheight%
+      \fi%
+    \end{beamercolorbox}
+  }
+\fi
+
+
+\def\beamer@sidebarformat#1#2#3{%
+  \begin{beamercolorbox}[wd=\beamer@sidebarwidth,leftskip=#1,rightskip=1ex plus1fil,vmode]{#2}
+    \vbox{}%
+    #3\par%
+    \vbox{}%
+    \vskip-1.5ex%
+  \end{beamercolorbox}
+}
+
+\defbeamertemplate*{section in sidebar}{pwr theme}
+{%
+  \vbox{%
+    \vskip1ex%
+    \beamer@sidebarformat{3pt}{section in sidebar}{\insertsectionhead}%
+  }%
+}
+
+\defbeamertemplate*{section in sidebar shaded}{pwr theme}
+{%
+  \vbox{%
+    \vskip1ex%
+    \beamer@sidebarformat{3pt}{section in sidebar shaded}{\insertsectionhead}%
+  }%
+}
+
+\defbeamertemplate*{subsection in sidebar}{pwr theme}
+{%
+  \beamer@sidebarformat{5pt}{subsection in sidebar}{\insertsubsectionhead}%
+}
+
+\defbeamertemplate*{subsection in sidebar shaded}{pwr theme}
+{%
+  \beamer@sidebarformat{5pt}{subsection in sidebar shaded}{\insertsubsectionhead}%
+}
+
+
+\ifdim\beamer@sidebarwidth>0pt
+
+                                % Sidebar
+  \setbeamersize{sidebar width \beamer@sidebarside=\beamer@sidebarwidth}
+  \defbeamertemplate*{sidebar \beamer@sidebarside}{pwr theme}
+  {
+    \beamer@tempdim=\beamer@sidebarwidth%
+    \advance\beamer@tempdim by -6pt%
+%JJ bylo ht=18mm - poczatek paska sidebaru
+    \begin{beamercolorbox}[wd=7mm,ht=14mm]{headline}
+    \null
+    \end{beamercolorbox}
+%JJ bylo ht=71mm - koniec paska sidebaru
+    \begin{beamercolorbox}[wd=7mm,ht=75mm]{frametitle}
+    \null
+    \end{beamercolorbox}
+  }%
+
+  \ifx\beamer@sidebarside\beamer@lefttext%
+    \defbeamertemplate*{sidebar right}{pwr theme}
+    {%
+      \vfill%
+      \llap{\usebeamertemplate***{navigation symbols}\hskip0.1cm}%
+      \vskip2pt}
+  \fi
+                                % Margins
+  \setbeamersize{text margin left=0.5cm,text margin right=0.5cm}
+\fi
+
+\mode
+<all>
+
+%%% Local Variables:
+%%% TeX-master: "~/texmf/tex/latex/beamer/test/test.tex"
+%%% End:

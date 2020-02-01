@@ -19,7 +19,7 @@ axis([-1 11 -1 12])
 print -depsc trajektoriaKwadratPorownaniek1
 
 k1 = 0.1;
-k2 = [1 5 10 50];
+k2 = [50 10 5 1];
 
 sim('RobotDoSrodkaPorownanieParametrowSim');
 figure
@@ -29,6 +29,6 @@ grid on;
 plot(x,y);
 xlabel('x');
 ylabel('y');
-legend({'Generator', 'k2 = 1', 'k2 = 5', 'k2 = 10', 'k2 = 50'},'FontSize', 7, 'NumColumns', 3);
+legend({'Generator', 'k2 = 50', 'k2 = 10', 'k2 = 5', 'k2 = 1'},'FontSize', 7, 'NumColumns', 3);
 axis([-1 11 -1 12])
 print -depsc trajektoriaKwadratPorownaniek2

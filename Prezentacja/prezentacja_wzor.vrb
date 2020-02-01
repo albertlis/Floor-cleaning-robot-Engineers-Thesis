@@ -1,0 +1,17 @@
+\frametitle{Rozwiązanie - cd}
+	\begin{flushleft}
+		\begin{lstlisting}[language=C++, resetmargins = true]
+		template <typename T>
+		u32 calculate(T nr1, T nr2) {
+		T temp;
+		u32 timerStart = micros();
+		for(u32 counter{0}; counter < 1000000; ++counter) {
+		temp = nr1 * nr2;
+		nr1 += temp;
+		nr2 += temp + nr1;
+		}
+		return micros() - timerStart;
+		}
+		\end{lstlisting}
+	\end{flushleft}
+			

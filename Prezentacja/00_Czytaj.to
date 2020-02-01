@@ -1,0 +1,127 @@
+Content-type: text/plain; charset=utf8
+Tytuł: Przykład prezentacji w beamerze zgodnej z logotypem PWr i KCiR (W4/K7)
+Autor: Robert Muszyński (mucha@pwr.edu.pl)
+Wersja: 1.2.0
+Data utworzenia: 2014-04-22
+Data ostatniej modyfikacji: 2017-03-30
+
+==================================================================================
+Przykład prezentacji w beamerze zgodnej z logotypem PWr i KCiR i zorganizowanej
+tak, że strona tytułowa stanowi oddzielny dokument. Celem podziału jest
+umożliwienie przygotowania prezentacji w ulubionym formacie, jednakże
+ze stroną tytułową zgodną z wymienionymi logotypami (w celu dołączenia takiej
+strony tytułowej do własnej prezentacji należy wykorzystać sposób użyty
+w pliku prezentacja_tresc.tex).
+
+==================================================================================
+Pliki:
+
+00_Czytaj.to - plik, który właśnie czytasz
+
+prezentacja_kcir.tgz - całość w postaci archiwum
+
+prezentacja_wzor.tex  - wzorcowy plik z przykładowymi ustawieniami do wydruków
+prezentacja_tresc.tex - plik z wzorcową prezentacją i zewnętrzną stroną tytułową
+prezentacja_tytul.tex - plik ze stroną tytułową w/g logotypu
+prezentacja_wzor_oryginal.pdf - efekt skompilowania przykładu
+
+beamer*k7pwr.sty - pliki definiujące styl
+znak-pwr_poziom-cmyk_dobry_*.pdf - pliki z logiem PWr
+nazwa-katedry_jasna-cmyk_dobry_*.pdf - pliki z nazwą katedry złożoną czcionką PWr
+CyRobek.* - pliki z CyRobkiem
+pasek1.png - plik z widokiem A1 użytym na stronie tytułowej
+
+==================================================================================
+Pobranie wzorca prezentacji:
+Najprostszy sposób pozyskania wzorca prezentacji to pobranie pliku
+prezentacja_kcir.tgz i jego rozpakowanie.
+
+==================================================================================
+W przykładzie strona tytułowa prezentacji została umieszczona w oddzielnym 
+pliku, co umożliwia jej dołączenie do prezentacji przygotowanej w dowolnym
+stylu (np. takiej, jaką zrobiono w pliku prezentacja_tresc.tex).
+
+Edytujemy:
+prezentacja_tytul.tex - by zmienić zawartość (czy także wygląd) strony tytułowej
+prezentacja_tresc.tex - by zmienić zawartość prezentacji
+prezentacja_wzor.tex  - by zmienić wygląd prezentacji, dodać pakiety, 
+                        przygotować wydruki z notatkami, wielokrotne
+
+By w nagłówkach uzyskać angielską nazwę uczelni i katedry należy użyć
+\usetheme[lang=en]{k7pwr} (w pliku głównym/z tytułem, wedle potrzeby)
+(pewnie nie będą wówczas potrzebne dołączane domyślnie pakiety polski 
+i inputenc - usunąć ich wywołanie).
+
+By powiększyć obszar "roboczy" slajdu można użyć ramkę w formacie plain
+\begin{frame}[plain]
+\end{frame}
+
+Zarówno w ramce w formacie plain jak i nie plain obecnie użycie \framesubtitle
+nie przyniesie poprawnego rezultatu - zaleca się więc nie używać.
+
+==================================================================================
+Kompilacja:
+pdflatex prezentacja_tytul.tex
+pdflatex prezentacja_tytul.tex
+pdflatex prezentacja_wzor.tex
+pdflatex prezentacja_wzor.tex
+
+Plik wynikowy:
+prezentacja_wzor.pdf
+
+Kontrola zgodności używanej instalacji systemu LaTeX: Wygląd otrzymanego pliku
+wynikowego powinien być zgodny z wyglądem pliku prezentacja_wzor_oryginal.pdf
+
+==================================================================================
+O wyglądzie prezentacji decyduje temat k7pwr przygotowany na bazie 
+tematu pwr opracowanego przez W. Myszkę 
+(https://kmim.wm.pwr.edu.pl/myszka/projekty/szablon-prezentacji-zgodny-z-ksiega-logotypu/)   
+a dokładniej jego "odchudzonej" wersji
+(https://kmim.wm.pwr.edu.pl/myszka/projekty/szablon-prezentacji-zgodny-z-ksiega-logotypu/wersja-light-szablonu-prezentacji/)
+Pliki stylu beamer*k7pwr.sty można przechowywać w katalogu lokalnym
+lub skopiować do wybranego katalogu latechowego ze stylami. 
+
+Lista plików wykorzystywancyh przez temat k7pwr (do skopiowania):
+beamer*k7pwr.sty
+znak-pwr_poziom-cmyk_dobry_*.pdf
+nazwa-katedry_jasna-cmyk_dobry_*.pdf
+CyRobek.*
+pasek1.png
+
+W pliku beamerinnerthemek7pwr.sty można zdecydować o tym, w jakim formacie
+będzie dołączany CyRobek (przygotowane są dwie możliwości: pdf i tikz). W tym
+celu należy odkomentować właściwy fragment w "Wybór sposobu dołączania
+CyRobka". W dostarczonej wersji dołączana jest wersja pdf.
+
+By dołączyć CyRobka w formacie png (trzecia możliwość) należy wybrać w
+powyżej wspomnianym pliku opcję pdf a w pliku beamerthemek7pwr.sty
+zmienić rozszerzenie w instrukcji
+\pgfdeclareimage[height=12mm]{CyRobek}{CyRobek.pdf} z pdf na png.
+
+W plikach beamerinnerthemek7pwr.sty i beamerouterthemek7pwr.sty można
+zdecydować o tym, w jakim formacie będzie dołączona w nagłówkach nazwa
+katedry (odpowiednio na stronie tytułowej i na kolejnych slajdach -
+przygotowane są dwie możliwości: jako zwykły tekst złożony czcionką
+dokumentu albo jako plik z krzywymi odpowiadającymi czcionce
+politechnicznej). W tym celu należy odkomentować właściwy fragment w
+"Dodanie nazwy katedry do...". W dostaraczonej wersji dołączany jest
+napis w krzywych.
+
+==================================================================================
+Do ogarnięcia:
+
+- sprawa czcionek - zrobiona jedynie nazwa katedry
+- sprawa proporcji slajdów (różne aspect ratio)
+- poprawne działanie \framesubtitle
+- synchronizacja z nową wersją plików dra Myszki
+- wykorzystanie schematu kolorów \usecolortheme[named=brown??red]{structure}
+- usunięcie komunikatów Overfull
+
+==================================================================================
+Lista zmian:
+
+2016-02-16: zmiana koloru odwołań zewnętrznych, dodany przykład takowego
+2016-02-26: drobne uzupełnienia/zmiany komentarzy
+2016-08-16: ogarnięta sprawa nazwy katedry w krzywych, nowa nazwa PWr po angielsku
+2016-08-17: zmiana opisu, dodany przykład slajdu w formacie plain
+2017-03-30: dodana definicja i przykłady slajdów z dużymi zdjęciami

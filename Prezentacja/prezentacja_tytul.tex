@@ -1,0 +1,51 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Strona tytułowa prezentacji w stylu KCiR PWr dołączana do niej jako pdf
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[]{beamer} 
+
+\usepackage{tikz}
+
+%styl zgodny z~logotypem PWr i~KCiR (W4/K7)
+%użycie opcji lang=en pozwala na uzyskanie strony tytułowej w~wersji angielskiej
+%(zapewne po jej wybraniu niepotrzebny będzie pakiet polski dołączany poniżej
+% i~być może pakiet inputenc - też dołączany poniżej. Należy więc usunąć je.).
+%\usetheme[lang=en]{k7pwr}
+\usetheme{k7pwr}
+
+%dla kompletności styl zgodny z~logotypem PWr przygotowany przez W. Myszkę 
+%(https://kmim.wm.pwr.edu.pl/myszka/projekty/szablon-prezentacji-zgodny-z-ksiega-logotypu/)
+%\usetheme{pwr}
+
+%\usecolortheme[named=red]{structure}
+
+%spolszczamy (jeśli potrzeba)
+\usepackage{polski}
+%\usepackage[latin2]{inputenc}   %wybór sposobu kodowania znaków diakrytycznych
+\usepackage[utf8]{inputenc}
+
+% Tytuł referatu
+\title{Projekt robota usługowego do zastosowań domowych}
+% Autor referatu
+\author{Albert Lis \\ \scriptsize Promotor: \\ Dr inż. Mateusz Cholewiński}
+% Data
+%\date{}
+%\date[23 września 2009 roku]{Wrocław, 23 września 2009 roku}
+\date[\today]{Wrocław, \today}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Początek dokumentu
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+% Strona tytułowa
+\setbeamertemplate{navigation symbols}{} %remove navigation symbols
+\begin{frame}[plain,t]
+  \maketitle
+\end{frame}
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Koniec dokumentu
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -1,0 +1,44 @@
+\ProvidesPackageRCS $Header: /root/latex-beamer/latex-beamer/themes/theme/beamerthemek7pwr.sty,v 1.00 2014/04/22 22:21:16 tantau Exp $
+% Copyright 2003 by Till Tantau <tantau@users.sourceforge.net>
+%
+% This program can be redistributed and/or modified under the terms
+% of the GNU Public License, version 2.
+%
+% Modified by Robert Muszyński <Robert.Muszynski@pwr.edu.pl>
+
+%\DeclareOptionBeamer{shadow}[true]{\def\beamer@themerounded@shadow{#1}}
+%\ExecuteOptionsBeamer{shadow=false}
+%\ProcessOptionsBeamer
+
+\DeclareOptionBeamer{pasek}[pasek1]{\def\beamer@pwr@pasek{#1}}
+\ExecuteOptionsBeamer{pasek=pasek1}
+\DeclareOptionBeamer{lang}[pl]{\def\beamer@pwr@jezyk{#1}}
+\ExecuteOptionsBeamer{lang=pl}
+\ProcessOptionsBeamer
+
+\mode<presentation>
+
+\def\beamer@pwr@polski{pl}%
+\ifx\beamer@pwr@jezyk\beamer@pwr@polski%
+  \def\nazwaksiedem{Katedra Cybernetyki i~Robotyki}%
+\else%
+  \def\nazwaksiedem{Department of Cybernetics and Robotics}%
+\fi
+
+\pgfdeclareimage[height=12mm]{CyRobek}{CyRobek.pdf}
+%\pgfdeclareimage[height=29.5mm]{Logoduze}{znak-pwr_poziom-k7-cmyk_dobry_\beamer@pwr@jezyk}
+\pgfdeclareimage[height=23mm]{Logoduze}{znak-pwr_poziom-cmyk_dobry_\beamer@pwr@jezyk}
+\pgfdeclareimage[height=5mm]{Nazwakatedry}{nazwa-katedry_jasna-cmyk_dobry_\beamer@pwr@jezyk}
+\pgfdeclareimage[height=2.4mm]{Nazwakatedrymala}{nazwa-katedry_jasna-cmyk_dobry_\beamer@pwr@jezyk}
+\pgfdeclareimage[width=23mm,height=73mm,interpolate=false]{pasek}{\beamer@pwr@pasek}
+%\pgfdeclareimage[height=7mm]{Logomale}{logopwrplm} % bitmapa o wysokości ~60 px
+\pgfdeclareimage[height=7mm]{Logomale}{znak-pwr_poziom-cmyk_dobry_\beamer@pwr@jezyk} % 
+
+\useinnertheme{k7pwr}
+\useoutertheme[left,width=7mm]{k7pwr}
+%przywrocone czcionki RM
+%\usefonttheme{pwr}
+\usecolortheme{k7pwr}
+
+\mode
+<all>

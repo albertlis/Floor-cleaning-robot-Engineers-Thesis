@@ -1,0 +1,265 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%                Prezentacja w stylu KCiR PWr (W4/K7)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[usepdftitle=false]{beamer} % do wyprodukowania slajdów
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Zestaw nagłówków pozwalających na wyprodukowanie różnych formatów dokumentu
+% Zobacz też poniżej % Polecenia sterujące rodzajem tworzonego materiału
+% oraz % Polecenia własne
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Opcja usepdftitle=false może zostać pominięta, gdy tytuł w pdfinfo
+% jest taki sam jak tytuł prezentacji
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\documentclass[handout]{beamer} %handout - bez warstw na slajdach
+%\documentclass[handout,ignorenonframetext]{beamer} %ignorenonframetext - bez treści umieszczonej poza ramkami
+
+%styl zgodny z~logotypem PWr i~KCiR (W4/K7)
+%użycie opcji lang=en pozwala na uzyskanie strony tytułowej w~wersji angielskiej
+%(zapewne po jej wybraniu niepotrzebny będzie pakiet polski dołączany poniżej
+% i~być może pakiet inputenc - też dołączany poniżej. Należy więc usunąć je.).
+%\usetheme[lang=en]{k7pwr}
+\usetheme{k7pwr}
+% zmiana wyglądu bloków
+\useinnertheme[shadow]{rounded}
+
+%przykładowe alternatywne style prezentacji (jednak tutaj wciąż ze stroną tytułową zgodną z~logotypem)
+%\usetheme{Madrid}
+%\usetheme{Warsaw}
+%styl zgodny z~logotypem PWr przygotowany przez W. Myszkę
+%(https://kmim.wm.pwr.edu.pl/myszka/projekty/szablon-prezentacji-zgodny-z-ksiega-logotypu/)
+%\usetheme{pwr}
+
+%\usecolortheme[named=red]{structure}
+
+%spolszczamy (jeśli potrzeba)
+\usepackage{polski}
+%\usepackage[latin2]{inputenc}   %wybór sposobu kodowania znaków diakrytycznych
+\usepackage[utf8]{inputenc}
+
+\usepackage{hyperref}
+\usepackage{pdfpages}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[]{siunitx}
+\usepackage{units}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{tikz}
+\usepackage{multirow}
+\usepackage{comment}
+\usepackage{multicol}
+\usepackage{listings}
+\usepackage{movie15}
+
+%przykładowe pakiety możliwe do użycia w~prezentacji
+%\usepackage{pgf}
+%\usepackage{pgfpages}
+%\pgfpagesuselayout{4 on 1}[a4paper,border shrink=2.5mm,landscape]
+
+ \usepackage{tikz} %użyty w~przykładzie do dołączania "pełnoekranowych" zdjęć 
+% \usepackage{tikzpagenodes} 
+% \usetikzlibrary{arrows,shapes,trees}
+
+%\usepackage{multimedia}
+%\usepackage{movie15}
+%\usepackage{xmpmulti}
+
+% \usepackage{amsmath}
+% \usepackage{amssymb}
+%\usepackage{array}
+%\usepackage{verbatim}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Polecenia sterujące rodzajem tworzonego materiału
+%
+% dobre ustawienia do wydruku (przy dodanym parametrze klasy handout)
+%
+% \setbeameroption{show notes} z zamarkowanym \note{\mbox{}} 
+%   w \noteframetitle i użytym \noteframetitle w miejsce \frametitle
+%
+% \setbeameroption{show only notes} z odmarkowanym \note{\mbox{}} 
+%   w \noteframetitle i użytym \noteframetitle w miejsce \frametitle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\setbeameroption{show only notes}
+%\setbeameroption{show notes together with slides}
+%\setbeameroption{show notes}
+
+%%%--------------------------------------------------------------------------
+% % przykład definicji opcji handout (4 slajdy na stronie z~ramkami)
+% \mode<handout>
+% {
+%   \usepackage{pgf}
+%   \usepackage{pgfpages}
+%  
+%   \pgfpagesdeclarelayout{4 on 1 boxed}
+%   {
+%     \edef\pgfpageoptionheight{\the\paperheight} 
+%     \edef\pgfpageoptionwidth{\the\paperwidth}
+%     \edef\pgfpageoptionborder{0pt}
+%   }
+%   {
+%     \pgfpagesphysicalpageoptions
+%     {%
+%       logical pages=4,%
+%       physical height=\pgfpageoptionheight,%
+%       physical width=\pgfpageoptionwidth%
+%     }
+%     \pgfpageslogicalpageoptions{1}
+%     {%
+%       border code=\pgfsetlinewidth{2pt}\pgfstroke,%
+%       border shrink=\pgfpageoptionborder,%
+%       resized width=.5\pgfphysicalwidth,%
+%       resized height=.5\pgfphysicalheight,%
+%       center=\pgfpoint{.25\pgfphysicalwidth}{.75\pgfphysicalheight}%
+%     }%
+%     \pgfpageslogicalpageoptions{2}
+%     {%
+%       border code=\pgfsetlinewidth{2pt}\pgfstroke,%
+%       border shrink=\pgfpageoptionborder,%
+%       resized width=.5\pgfphysicalwidth,%
+%       resized height=.5\pgfphysicalheight,%
+%       center=\pgfpoint{.75\pgfphysicalwidth}{.75\pgfphysicalheight}%
+%     }%
+%     \pgfpageslogicalpageoptions{3}
+%     {%
+%       border code=\pgfsetlinewidth{2pt}\pgfstroke,%
+%       border shrink=\pgfpageoptionborder,%
+%       resized width=.5\pgfphysicalwidth,%
+%       resized height=.5\pgfphysicalheight,%
+%       center=\pgfpoint{.25\pgfphysicalwidth}{.25\pgfphysicalheight}%
+%     }%
+%     \pgfpageslogicalpageoptions{4}
+%     {%
+%       border code=\pgfsetlinewidth{2pt}\pgfstroke,%
+%       border shrink=\pgfpageoptionborder,%
+%       resized width=.5\pgfphysicalwidth,%
+%       resized height=.5\pgfphysicalheight,%
+%       center=\pgfpoint{.75\pgfphysicalwidth}{.25\pgfphysicalheight}%
+%     }%
+%   }
+%
+%   \pgfpagesuselayout{4 on 1 boxed}[a4paper, border shrink=5mm, landscape]
+%   \nofiles
+% }
+
+%%%--------------------------------------------------------------------------
+% % przykład def. opcji handout (2 slajdy na stronie plus miejsce na notatki)
+% \mode<handout>
+% {
+% \usepackage{pgf}
+% \usepackage{pgfpages}
+%
+% \pgfpagesdeclarelayout{2 on 1 boxed with notes}
+% {
+% \edef\pgfpageoptionheight{\the\paperheight} 
+% \edef\pgfpageoptionwidth{\the\paperwidth}
+% \edef\pgfpageoptionborder{0pt}
+% }
+% {
+% \setkeys{pgfpagesuselayoutoption}{landscape}
+% \pgfpagesphysicalpageoptions
+%     {%
+%         logical pages=4,%
+%         physical height=\pgfpageoptionheight,%
+%         physical width=\pgfpageoptionwidth,%
+%         last logical shipout=2%
+%     }
+% \pgfpageslogicalpageoptions{1}
+%     {%
+%     border code=\pgfsetlinewidth{1pt}\pgfstroke,%
+%     scale=1,
+%     center=\pgfpoint{.25\pgfphysicalwidth}{.75\pgfphysicalheight}%
+%     }%
+% \pgfpageslogicalpageoptions{2}
+%     {%
+%     border code=\pgfsetlinewidth{1pt}\pgfstroke,%
+%     scale=1,
+%     center=\pgfpoint{.25\pgfphysicalwidth}{.25\pgfphysicalheight}%
+%     }%
+% \pgfpageslogicalpageoptions{3}
+%     {%
+%     border shrink=\pgfpageoptionborder,%
+%     resized width=.7\pgfphysicalwidth,%
+%     resized height=.5\pgfphysicalheight,%
+%     center=\pgfpoint{.75\pgfphysicalwidth}{.29\pgfphysicalheight},%
+%     copy from=3
+%     }%
+% \pgfpageslogicalpageoptions{4}
+%     {%
+%     border shrink=\pgfpageoptionborder,%
+%     resized width=.7\pgfphysicalwidth,%
+%     resized height=.5\pgfphysicalheight,%
+%     center=\pgfpoint{.75\pgfphysicalwidth}{.79\pgfphysicalheight},%
+%     copy from=4
+%     }%
+%
+% \AtBeginDocument
+%     {
+%     \newbox\notesbox
+%     \setbox\notesbox=\vbox
+%         {
+%             \hsize=\paperwidth
+%             \vskip-1in\hskip-1in\vbox
+%             {
+%                 \vskip1cm
+%                 Notes\vskip1cm
+%                         \hrule width\paperwidth\vskip1cm
+%                     \hrule width\paperwidth\vskip1cm
+%                         \hrule width\paperwidth\vskip1cm
+%                     \hrule width\paperwidth\vskip1cm
+%                         \hrule width\paperwidth\vskip1cm
+%                     \hrule width\paperwidth\vskip1cm
+%                     \hrule width\paperwidth\vskip1cm
+%                     \hrule width\paperwidth\vskip1cm
+%                         \hrule width\paperwidth
+%             }
+%         }
+%         \pgfpagesshipoutlogicalpage{3}\copy\notesbox
+%         \pgfpagesshipoutlogicalpage{4}\copy\notesbox
+%     }
+% }
+% }
+%
+% \pgfpagesuselayout{2 on 1 boxed with notes}[letterpaper,border shrink=5mm]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Polecenia własne
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Zamiennik polecenia \frametitle
+% Dodaje pustą notkę do każdej strony tak, by przy opcji show only
+% notes w dokumencie były wszystkie slajdy (także te bez właściwych
+% notatek) przy opcji show notes może warto zamarkować \note{\mbox{}}
+% by dostać slajdy z notatkami tylko tam, gdzie one są
+\newcommand{\noteframetitle}[1]{\frametitle[\large #1]{#1}
+  \note{\mbox{}}
+}
+
+% Polecenie do dokładania wycentrowanych rzeczy (zdjęć) na środku slajdu 
+% bez tytulariów (ale ze stopką i~naczółkiem)
+% By uzyskać obrazek "na całą stronę" jako argumentu należy użyć
+% \includegraphics[height=\maxheight,width=\paperwidth]{figure/balbina.jpg}
+% Jeśli nie chcesz zmian proporcji - zrezygnuj z~jednego z~wymiarów
+% Obrazki za duże przykryją naczółek strony
+% By wszystko było na swoim miejscu potrzebna jest dwukrotna kompilacja 
+\newcommand{\framecentered}[1]{
+  \setbeamertemplate{background canvas}{}
+  \begin{frame}[plain,c]
+    \begin{tikzpicture}[overlay, remember picture]
+      \node[anchor=center] at (current page.center) 
+      {#1};
+    \end{tikzpicture}
+  \end{frame}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Pliki z treścią prezentacji
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{prezentacja_tresc.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Koniec dokumentu
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

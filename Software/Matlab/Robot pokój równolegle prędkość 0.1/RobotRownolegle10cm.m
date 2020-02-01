@@ -7,8 +7,8 @@ l = 0.0965;
 tsym = 75;
 szerokoscMycia = 0.2;
 wrToObrPerSecondPrescaler = 7/16;
-wrLimit =  2.5 * wrToObrPerSecondPrescaler;
-wheelSpeedRadiansLimit = 8;
+wrLimit =  200.5 * wrToObrPerSecondPrescaler;
+wheelSpeedRadiansLimit = 800;
 
 sim('RobotRownolegle10cmSim');
 figure;
@@ -32,7 +32,7 @@ xlabel('t [s]');
 ylabel('obr\s');
 legend('Lewe', 'Prawe');
 title('Prêdkoœci kó³');
-axis([0 75 -1.5 1.5])
+axis([0 75 -8 8])
 print -depsc predkoscKolRownoleglek1=1k2=10s=01d02
 
 figure;
