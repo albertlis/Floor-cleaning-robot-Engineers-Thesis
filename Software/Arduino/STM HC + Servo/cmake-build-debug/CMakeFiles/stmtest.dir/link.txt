@@ -1,3 +1,0 @@
-"E:\Programy\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\stmtest.dir/objects.a
-E:\Programy\MinGW\bin\ar.exe cr CMakeFiles\stmtest.dir/objects.a @CMakeFiles\stmtest.dir\objects1.rsp
-C:\Users\PAPASM~1\PLATFO~1\packages\TOOLCH~3\bin\AR10B2~1.EXE -g   -Wl,--whole-archive CMakeFiles\stmtest.dir/objects.a -Wl,--no-whole-archive  -o stmtest.exe -Wl,--out-implib,libstmtest.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\stmtest.dir\linklibs.rsp

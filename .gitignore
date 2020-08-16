@@ -18,3 +18,4 @@ Książki/
 slprj/
 *.eps
 *.png
+cmake-build-debug/
