@@ -11,7 +11,7 @@
 * [Contact](#contact)
 
 ## General info
-This project was created as my Engineer's Thesis. For more details check first chapter in [Praca Inżynierska](./Documents/W04_235534_2019_praca%20inżynierska.pdf)
+This project was created as my Engineer's Thesis. For more details check first chapter in [Praca Inżynierska](./Documents/W04_235534_2019_praca%20inżynierska.pdf).
 
 ## Presentation
 <p align="center">
@@ -44,7 +44,7 @@ This project was created as my Engineer's Thesis. For more details check first c
 * serial - Python Standard Library
 
 ## Features
-Check section 1.2 and cheapter 3 in [Praca Inżynierska](./Documents/W04_235534_2019_praca%20inżynierska.pdf)
+Check section 1.2 and cheapter 3 in [Praca Inżynierska](./Documents/W04_235534_2019_praca%20inżynierska.pdf).
 
 ## Status
 Project is: _finished_
