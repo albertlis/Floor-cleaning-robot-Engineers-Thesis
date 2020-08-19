@@ -32,7 +32,7 @@ This project was created as my Engineer's Thesis. For more details check first c
 
 ## Libraries
 ### C++/stm32duino
-* Streaming - version 0.0.0-alpha+sha.5
+* Streaming - version 5.0.0
 * tone - stm32duino Standard Library
 * wirish - stm32duino Standard Library
 * pwm - stm32duino Standard Library
